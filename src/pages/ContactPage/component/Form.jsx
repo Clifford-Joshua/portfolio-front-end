@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { toast } from "react-toastify";
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import Loader from "../../../components/Loader";
 import { MdArrowOutward } from "react-icons/md";
 
 const url = import.meta.env.VITE_PROJECT_DEPLOYED_URL;
@@ -16,6 +17,7 @@ const Form = () => {
   });
 
   const [data, setData] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
 
   const { isDay } = useSelector((store) => store.navBar);
 
@@ -34,6 +36,8 @@ const Form = () => {
       toast.error("Please fill in all fields");
       return;
     }
+
+    setIsLoading(true);
 
     try {
       const res = await fetch(`${url}/contact/sendMessage`, {
@@ -67,6 +71,8 @@ const Form = () => {
       });
     } catch (error) {
       console.log("Error submitting form:", error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -75,7 +81,9 @@ const Form = () => {
       <div className="flex flex-col gap-[2rem] lg:flex-row lg:gap-[2rem]">
         <Intro />
 
-        {data && data.success ? (
+        {isLoading ? (
+          <Loader />
+        ) : data && data.success ? (
           <div className="flex items-center justify-center w-full py-[1rem]">
             <h2
               className={`font-bold text-[1.1rem] lg:text-[1.3rem] text-center ${
