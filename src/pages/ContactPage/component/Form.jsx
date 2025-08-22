@@ -82,7 +82,9 @@ const Form = () => {
         <Intro />
 
         {isLoading ? (
-          <Loader />
+          <div className="lg:w-[50%]">
+            <Loader />
+          </div>
         ) : data && data.success ? (
           <div className="flex items-center justify-center w-full py-[1rem]">
             <h2
