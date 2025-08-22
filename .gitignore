@@ -12,7 +12,7 @@ logs/*
 pids
 *.pid
 *.seed
-*.pid.lock
+*.pid.loc
 
 # Environment variables
 .env
