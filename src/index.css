@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --breakpoint-md: 764px;
+  --breakpoint-lg: 1024px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-family: "Roboto", sans-serif;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* remove scrollbar */
+::-webkit-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar (cross-browser) */
+::-webkit-scrollbar {
+  display: none;
+}
