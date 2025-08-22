@@ -1,5 +1,5 @@
 // import Home from "./Homepage/Home";
-import Home from "./Homepage/Home";
+import Home from "./HomePage/Home";
 import Login from "./LoginPage/Login";
 import Error from "./ErrorPage/Error";
 import About from "./AboutPage/About";
