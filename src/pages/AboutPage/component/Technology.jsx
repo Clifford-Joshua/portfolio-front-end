@@ -18,11 +18,11 @@ const Technology = () => {
           Technology
         </h2>
 
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-[1rem]  lg:p-[1rem]">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(78px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-[0.8rem]  lg:p-[1rem] place-content-center place-items-center ">
           {Tech_Img.map((images, ind) => {
             return (
               <div
-                className={`border-2 w-[100px] h-[100px] rounded-2xl flex items-center justify-center drop-shadow-gray-500     ${
+                className={`border-2 w-[100%] h-[80px] md:w-[100px] md:h-[100px] rounded-2xl flex items-center justify-center drop-shadow-gray-500     ${
                   isDay
                     ? "object-[70%_35%] shadow-[0_0_10px_white]"
                     : "shadow-[0_0_10px_black]"
