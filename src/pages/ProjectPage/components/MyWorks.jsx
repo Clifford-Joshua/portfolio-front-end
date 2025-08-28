@@ -98,7 +98,7 @@ const MyWorks = () => {
                     </p>
                   </div>
 
-                  <div className="py-[1rem]">
+                  <div className="py-[1rem] mt-auto">
                     <button className="flex items-center w-[100%] justify-center gap-[0.5rem] cursor-pointer py-[0.4rem] px-[1.2rem] rounded-[8px] font-bold  bg-red-500 shadow-lg shadow-cyan-500/50 capitalize text-white hover:bg-red-700 transition-all duration-300">
                       <h2 className="text-[0.9rem] md:text-[1rem] py-[0.1rem]">
                         delete
