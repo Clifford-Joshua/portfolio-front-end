@@ -66,7 +66,7 @@ const MyWorks = () => {
             /* navigate link */
             return (
               <a href={liveLink} referrerPolicy="no-referrer" key={_id}>
-                <div className=" relative overflow-hidden rounded-[0.5rem] md:h-full  shadow-[0_0_10px_5px_gray] cursor-pointer group bg-white p-[0.5rem] ">
+                <div className=" relative overflow-hidden rounded-[0.5rem] md:h-full  shadow-[0_0_10px_5px_gray] cursor-pointer group bg-white p-[0.5rem]  flex flex-col ">
                   {/* ============================================================================== */}
                   {/* dark background */}
                   <div className="w-[100%] h-[100%] absolute left-0 top-0 z-10 bg-[#000000ab] hidden group-hover:flex items-center justify-center gap-[0.5rem] text-[white] text-[1.2rem] cursor-pointer  transition ease-in-out duration-300 hover:text-blue-300">
